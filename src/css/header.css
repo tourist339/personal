@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  padding: 4px 0;
+  z-index: 10;
+}
+.header a {
+  padding: 8px;
+  font-size: x-large;
+  text-decoration: none;
+  color: white;
+  background-color: #e76f3d;
+  border-radius: 6px;
+}
+.header .header-logo {
+  margin-left: 6px;
+}
+.header .header-about {
+  margin-left: auto;
+  margin-right: 6px;
+}
+
+.relative {
+  display: flex;
+  padding: 8px;
+  padding-right: 12px;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+
+/*# sourceMappingURL=header.css.map */

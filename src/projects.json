@@ -1,0 +1,84 @@
+
+{ "largeprojects":[
+  {
+    "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
+      {"type":"img","url":"projects/lyfly/lyfly_02.png"},
+      {"type":"img","url":"projects/lyfly/lyfly_03.png"},
+      {"type":"img","url":"projects/lyfly/lyfly_04.png"}],
+
+    "title": "Property Rental Website(Lyfly)",
+    "sidebarName": "Lyfly",
+    "backgroundColor": "white",
+    "stack": ["PHP","APACHE","MYSQL","JS","SCSS/CSS","HTML"],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
+
+  },
+  {
+    "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
+      {"type":"img","url":"projects/lyfly/lyfly_02.png"},
+      {"type":"video","url":"dA2v9AxLpgs"}],
+    "title": "Xperiment.3D Web App",
+    "sidebarName": "Xperiment-3D",
+    "backgroundColor": "#FFFFFF",
+    "stack": ["PHP","Three.js","Js","SCSS/CSS","HTML"],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
+
+  },
+  {
+    "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
+      {"type":"img","url":"projects/lyfly/lyfly_02.png"}],
+    "title": "2d Platformer",
+    "sidebarName": "Game",
+    "backgroundColor": "#FFFFFF",
+    "stack": ["C#","Unity2D","SQLite"],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
+
+  }],
+  "smallprojects":[
+    {
+      "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
+        {"type":"img","url":"projects/lyfly/lyfly_02.png"}],
+      "title": "2d Platformer",
+      "sidebarName": "Game",
+      "backgroundColor": "#FFFFFF",
+      "stack": ["C#","Unity2D","SQLite"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
+
+    },
+    {
+      "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
+        {"type":"img","url":"projects/lyfly/lyfly_02.png"}],
+      "title": "2d Platformer",
+      "sidebarName": "Game",
+      "backgroundColor": "#FFFFFF",
+      "stack": ["C#","Unity2D","SQLite"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
+
+    },
+    {
+      "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
+        {"type":"img","url":"projects/lyfly/lyfly_02.png"}],
+      "title": "2d Platformer",
+      "sidebarName": "Game",
+      "backgroundColor": "#FFFFFF",
+      "stack": ["C#","Unity2D","SQLite"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
+
+    },
+    {
+      "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
+        {"type":"img","url":"projects/lyfly/lyfly_02.png"}],
+      "title": "2d Platformer",
+      "sidebarName": "Game",
+      "backgroundColor": "#FFFFFF",
+      "stack": ["C#","Unity2D","SQLite"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
+
+    }
+
+  ]
+}
+
+
+
+

@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.text-heading {
+  font-size: xxx-large !important;
+  font-family: "Nunito", sans-serif;
+}
+
+.text-mid-heading {
+  font-size: xx-large !important;
+  font-family: "Archivo", sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-medium {
+  font-size: larger !important;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.col-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.raised-box {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 16px;
+}
+
+/*# sourceMappingURL=main.css.map */

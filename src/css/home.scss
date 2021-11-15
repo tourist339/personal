@@ -1,0 +1,124 @@
+@use "variables";
+.container{
+
+}
+body{
+  position: relative;
+  height: 100%;
+}
+.home-bg{
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top:0;
+
+
+}
+.home-start{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  img{
+    position: absolute;
+  }
+}
+#laptop-img{
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+#headphone-img{
+  top: 35%;
+  left: 10%;
+  transform: rotateZ(-20deg);
+}
+#coffee-img{
+  top: 35%;
+  right: 18%;
+  transform: rotateZ(10deg);
+
+}
+
+
+#projects{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+
+  height: 100%;
+
+}
+#project-slides{
+  margin-right: 5px;
+}
+.project-scroll{
+  flex: 2;
+}
+.project-fixed{
+  display: block;
+}
+#project-sidebar{
+
+  margin-left: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  background-color: white;
+  height: 100vh;
+  &>div{
+    margin: 0 auto;
+    width: 80%;
+  }
+  .text-heading{
+    margin-bottom: 10px;
+    font-size: xxx-large !important;
+    color: black;
+    border-bottom:2px solid #ffbf00;
+
+  }
+
+  .project-name{
+    font-weight: 500;
+    margin: 40px 0px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: x-large !important;
+    border-bottom:1px solid variables.$color_gray;
+    width: fit-content;
+    color: black;
+    padding: 5px 50px;
+
+    &:hover{
+      background-color: whitesmoke;
+      border-bottom-width: 2px;
+      cursor: pointer;
+    }
+
+  }
+
+}
+
+.sidebar-scroll{
+  flex:1;
+  position: relative;
+  display: block;
+  top: 0;
+  right: 0;
+}
+.sidebar-fixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.p-slide{
+  padding: 8px;
+}
+
+#small-projects-container{
+  overflow-x: scroll;
+
+}

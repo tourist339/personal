@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+.typewriter {
+  width: fit-content;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.2em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+    /* The typwriter cursor */
+  }
+  50% {
+    border-color: orange;
+    /* The typwriter cursor */
+  }
+}
+body {
+  position: relative;
+  height: 100%;
+}
+
+.home-bg {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.home-start {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.home-start img {
+  position: absolute;
+}
+
+#laptop-img {
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#headphone-img {
+  top: 35%;
+  left: 10%;
+  transform: rotateZ(-20deg);
+}
+
+#coffee-img {
+  top: 35%;
+  right: 18%;
+  transform: rotateZ(10deg);
+}
+
+#projects {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  height: 100%;
+}
+
+#project-slides {
+  margin-right: 5px;
+}
+
+.project-scroll {
+  flex: 2;
+}
+
+.project-fixed {
+  display: block;
+}
+
+#project-sidebar {
+  margin-left: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  background-color: white;
+  height: 100vh;
+}
+#project-sidebar > div {
+  margin: 0 auto;
+  width: 80%;
+}
+#project-sidebar .text-heading {
+  margin-bottom: 10px;
+  font-size: xxx-large !important;
+  color: black;
+  border-bottom: 2px solid #ffbf00;
+}
+#project-sidebar .project-name {
+  font-weight: 500;
+  margin: 40px 0px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: x-large !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  width: fit-content;
+  color: black;
+  padding: 5px 50px;
+}
+#project-sidebar .project-name:hover {
+  background-color: whitesmoke;
+  border-bottom-width: 2px;
+  cursor: pointer;
+}
+
+.sidebar-scroll {
+  flex: 1;
+  position: relative;
+  display: block;
+  top: 0;
+  right: 0;
+}
+
+.sidebar-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.p-slide {
+  padding: 8px;
+}
+
+#small-projects-container {
+  overflow-x: scroll;
+}
+
+/*# sourceMappingURL=home.css.map */
