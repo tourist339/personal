@@ -6,7 +6,8 @@
   border-radius: 8px;
   z-index: 10;
   padding: $padding-top-bottom 10px;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 
   margin-bottom: 20px;
 
