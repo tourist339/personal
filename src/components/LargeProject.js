@@ -16,9 +16,9 @@ const LargeProject = (props) => (
         {/*Anchor point to display sidebar name */}
         <div className={props.sidebarName}/>
 
-        <div className="tech-stack">
-            <span className="stack-head">Technology Stack</span><span> : </span>
-            {props.stack.map((item,index)=><span key={index}><span  className="stack-item"> {item}</span>{index!=props.stack.length-1?<span> | </span>:<></>}</span>)}
+        <div className="tech-stack row-flex">
+            <div className="row-flex">   <p className="stack-head">Technology Stack</p><p> : </p></div>
+            {props.stack.map((item,index)=><div className="row-flex" key={index}><p  className="stack-item"> {item}</p>{index!=props.stack.length-1?<p> | </p>:<></>}</div>)}
         </div>
         <div className="description-box ">
             <p>{props.description}</p>

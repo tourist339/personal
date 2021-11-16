@@ -84,24 +84,36 @@
   text-align: left;
   font-size: larger;
   word-spacing: 0.2em;
+  height: fit-content;
+  overflow-x: scroll;
+}
+.tech-stack .row-flex p {
+  width: fit-content;
+  height: fit-content;
+  margin: auto 5px;
 }
 .tech-stack .stack-head {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
+  margin: 0 4px;
   padding: 8px 4px;
+  height: fit-content;
   border-radius: 10px;
 }
 .tech-stack .stack-item {
-  margin: 0 4px;
+  margin: auto 4px;
+  height: fit-content;
   border-bottom: 2px solid green;
 }
 
 .description-box {
+  margin-left: 0.5em;
   padding: 4px;
   font-size: larger;
   word-spacing: 0.4em;
   letter-spacing: 0.1em;
   line-height: 1.4em;
+  text-align: left;
 }
 .description-box p {
   margin: 0px;
