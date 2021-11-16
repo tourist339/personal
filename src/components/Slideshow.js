@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {Children, useEffect, useRef, useState} from 'react';
 import LargeProject from "./LargeProject";
 import "../css/slideshow.css"
 import YouTube from "react-youtube";
@@ -10,20 +10,28 @@ const Slideshow = (props) => {
     return(
         <div className="slideshow">
 
-            <Slides>
+            {props.res.length > 1 ?
 
-                {props.res.map((content,index)=>(
-                    <div className="each-slide" key={index}>
-                        {content.type=="video"?
-                        <YouTube videoId={content.url}/>
-                            :
-                            <div style={{backgroundImage:`url(${process.env.PUBLIC_URL}/imgs/${content.url})`}}></div>
-                        }
-                    </div>
-                ))
-                }
+                <Slides>
 
-            </Slides>
+                    {props.res.map((content, index) => (
+                        <div className="each-slide" key={index}>
+                            {content.type == "video" ?
+                                <YouTube videoId={content.url}/>
+                                :
+                                <div
+                                    style={{backgroundImage: `url(${process.env.PUBLIC_URL}/imgs/${content.url})`}}></div>
+                            }
+                        </div>
+                    ))
+
+                    }
+
+                </Slides>
+            :
+                <div className="each-slide">
+                    <div style={{backgroundImage: `url(${process.env.PUBLIC_URL}/imgs/${props.res[0].url})`}}></div>
+                </div>}
 
             {props.children !== undefined && props.children?
                 React.Children.map(props.children,(child)=>React.cloneElement(child))
@@ -83,8 +91,11 @@ const Slides=(props)=>{
         props.children.map((element,index)=>React.cloneElement(element,{key:index,index:index,className:`each-slide ${goPrev&index==prevIndex?'no-transition':''} ${goNext&&index==nextIndex?'no-transition':''}`,style:{left:`${currentIndex==index?"0":nextIndex==index?"100%":prevIndex==index?"-100%":""}`,opacity:`${currentIndex==index?"1":nextIndex==index?"1":prevIndex==index?"1":"0"}`}}))
 
     }
+        {Children.toArray(props.children).length  >1?
+            <>
         <button className={"slideshow-prev-btn"} onClick={()=>changeSlide(true)}><i className="fa fa-angle-right" ></i></button>
         <button  className={"slideshow-next-btn"} onClick={()=>changeSlide(false)}><i className="fa fa-angle-left" ></i></button>
+            </>:<></>}
     </>)
 }
 export default Slideshow;

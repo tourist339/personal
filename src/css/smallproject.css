@@ -101,4 +101,20 @@
   line-height: 1.3em;
 }
 
+.sp-stack {
+  padding: 12px 4px;
+  overflow-x: scroll;
+  width: fit-content;
+}
+.sp-stack .stack-head {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 4px;
+  border-radius: 10px;
+}
+.sp-stack .stack-item {
+  margin: 0 4px;
+  border-bottom: 2px solid green;
+}
+
 /*# sourceMappingURL=smallproject.css.map */

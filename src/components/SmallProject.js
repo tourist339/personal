@@ -16,6 +16,11 @@ const SmallProject=(props)=>{
             <button className={"sp-menu"} onClick={()=>setDisplayDesc(!displayDesc)}><i className={"fa fa-bars"}></i></button>
             <button className={"sp-links"}><i className={"fa fa-link"}></i></button>
             <div className="sp-title">{props.title}</div>
+            <div className="sp-stack">
+                <span className="stack-head">Stack</span><span> : </span>
+                {props.stack.map((item,index)=><span key={index}><span  className="stack-item"> {item}</span>{index!=props.stack.length-1?<span> | </span>:<></>}</span>)}
+
+            </div>
         </div>
     )
 }

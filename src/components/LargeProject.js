@@ -18,7 +18,7 @@ const LargeProject = (props) => (
 
         <div className="tech-stack">
             <span className="stack-head">Technology Stack</span><span> : </span>
-            {props.stack.map((item,index)=><span key={index}><span  className="stack-item"> {item}</span><span> | </span></span>)}
+            {props.stack.map((item,index)=><span key={index}><span  className="stack-item"> {item}</span>{index!=props.stack.length-1?<span> | </span>:<></>}</span>)}
         </div>
         <div className="description-box ">
             <p>{props.description}</p>

@@ -41,43 +41,31 @@
   }],
   "smallprojects":[
     {
-      "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
-        {"type":"img","url":"projects/lyfly/lyfly_02.png"}],
-      "title": "2d Platformer",
-      "sidebarName": "Game",
+      "res": [{"type":"img","url":"projects/carding/carding_01.png"}],
+      "title": "Carding Project",
+      "sidebarName": "Carding",
       "backgroundColor": "#FFFFFF",
-      "stack": ["C#","Unity2D","SQLite"],
+      "stack": ["Node.JS","React.JS","MongoDB","Python","Tensorflow","HHAHA"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
 
     },
     {
-      "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
-        {"type":"img","url":"projects/lyfly/lyfly_02.png"}],
-      "title": "2d Platformer",
+      "res": [{"type":"img","url":"projects/paintfx/paintfx_01.png"},
+        {"type":"img","url":"projects/paintfx/paintfx_02.png"},
+        {"type":"video","url":"v_Vqx1brS-Q"}],
+      "title": "Paint App (Java FX)",
       "sidebarName": "Game",
       "backgroundColor": "#FFFFFF",
-      "stack": ["C#","Unity2D","SQLite"],
+      "stack": ["JavaFX"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
 
     },
     {
-      "res": [{"type":"img","url":"projects/petcare/petcare_01.png"},
-        {"type":"img","url":"projects/petcare/petcare_02.png"},
-        {"type":"img","url":"projects/petcare/petcare_03.png"},
-        {"type":"img","url":"projects/petcare/petcare_04.png"},
-        {"type":"img","url":"projects/petcare/petcare_05.png"}
+      "res": [{"type":"img","url":"projects/bouncy/bouncy_01.webp"},
+        {"type":"img","url":"projects/bouncy/bouncy_02.webp"},
+        {"type":"img","url":"projects/bouncy/bouncy_03.webp"}
       ],
-      "title": "2d Platformer",
-      "sidebarName": "Game",
-      "backgroundColor": "#FFFFFF",
-      "stack": ["C#","Unity2D","SQLite"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
-
-    },
-    {
-      "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
-        {"type":"img","url":"projects/lyfly/lyfly_02.png"}],
-      "title": "2d Platformer",
+      "title": "Bouncy (Android Game)",
       "sidebarName": "Game",
       "backgroundColor": "#FFFFFF",
       "stack": ["C#","Unity2D","SQLite"],

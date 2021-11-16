@@ -57,3 +57,19 @@ $radius:0.5em;
   }
 
 }
+.sp-stack{
+  padding: 12px 4px;
+  overflow-x: scroll;
+  width: fit-content;
+  .stack-head{
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 8px 4px;
+    border-radius: 10px;
+  }
+  .stack-item{
+    margin: 0 4px;
+    border-bottom: 2px solid green;
+  }
+}
+
