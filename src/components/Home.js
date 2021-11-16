@@ -90,6 +90,18 @@ const Home = (props) => {
 
             <div className="projects container" id="projects">
 
+                <div ref={sidebar} className={`${toFixSidebar?"sidebar-fixed":"sidebar-scroll"}`} id="project-sidebar">
+                    <div  data-aos="fade-right" data-aos-duration="1300"  data-aos-anchor-placement="bottom-bottom" data-aos-once="true">
+                        <p className="text-heading">Projects</p>
+                    </div>
+                    {projects.largeprojects.map(p=>{
+                        return <div key={p.title} data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"  data-aos-anchor={"."+p.sidebarName} data-aos-once="true">
+                            <p onClick={()=>scrollToProject(p.sidebarName+"-project")} className="text-mid-heading project-name">{p.sidebarName}</p>
+                        </div>
+                    })}
+
+                </div>
+                <div className={`pseudo-sidebar ${!toFixSidebar?"hidden":""}`}></div>
                 <div id="project-slides" ref={projectsbar} className={`${toFixSidebar?"project-fixed":"project-scroll"}`}>
 
                         {projects.largeprojects.map(p=>{
@@ -105,17 +117,7 @@ const Home = (props) => {
                         })}
 
                 </div>
-                <div ref={sidebar} className={`${toFixSidebar?"sidebar-fixed":"sidebar-scroll"}`} id="project-sidebar">
-                    <div  data-aos="fade-left" data-aos-duration="1300"  data-aos-anchor-placement="bottom-bottom" data-aos-once="true">
-                        <p className="text-heading">Projects</p>
-                    </div>
-                    {projects.largeprojects.map(p=>{
-                        return <div key={p.title} data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"  data-aos-anchor={"."+p.sidebarName} data-aos-once="true">
-                                <p onClick={()=>scrollToProject(p.sidebarName+"-project")} className="text-mid-heading project-name">{p.sidebarName}</p>
-                        </div>
-                    })}
 
-                </div>
 
             </div>
 

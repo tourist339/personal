@@ -102,17 +102,22 @@ body{
 
 }
 
+.pseudo-sidebar{
+  flex: 1;
+  height: 100vw;
+}
+
 .sidebar-scroll{
   flex:1;
   position: relative;
   display: block;
   top: 0;
-  right: 0;
+  left: 0;
 }
 .sidebar-fixed{
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
 }
 .p-slide{
   padding: 8px;
