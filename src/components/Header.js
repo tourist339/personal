@@ -4,7 +4,7 @@ import "../css/header.css"
 const Header = (props) => (
 
     <div className={`header ${props.display}`}>
-        <Link className="header-logo" to="/">K</Link>
+        <Link className="header-logo" to="/"><i className="fa fa-home"/> </Link>
         <NavLink className="header-about" to="/about" activeStyle={{
             fontWeight: "bold",
             color: "red",

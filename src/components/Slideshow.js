@@ -17,7 +17,7 @@ const Slideshow = (props) => {
                         {content.type=="video"?
                         <YouTube videoId={content.url}/>
                             :
-                            <div style={{backgroundImage:`url(imgs/${content.url})`}}></div>
+                            <div style={{backgroundImage:`url(${process.env.PUBLIC_URL}/imgs/${content.url})`}}></div>
                         }
                     </div>
                 ))
@@ -35,9 +35,9 @@ const Slideshow = (props) => {
 }
 
 const Slides=(props)=>{
-    const [currentIndex,setCurrentIndex]=useState(0)
-    const [prevIndex,setPrevIndex]=useState(props.children.length-1)
-    const [nextIndex,setNextIndex]=useState(1)
+    const [currentIndex,setCurrentIndex]=useState(1)
+    const [prevIndex,setPrevIndex]=useState(0)
+    const [nextIndex,setNextIndex]=useState(2)
 
     const [allowed,setAllowed]=useState(true)
 
@@ -53,21 +53,24 @@ const Slides=(props)=>{
             return (index==0?props.children.length-1:index-1)
         }
     }
-    const changeSlide=(increase)=>{
+    const changeSlide=(toGoNext)=>{
         if(allowed) {
             setAllowed(false);
-            if (increase) {
+            if (toGoNext) {
                 setGoNext(true)
                 setGoPrev(false)
+
             }
             else {
                 setGoPrev(true)
                 setGoNext(false)
             }
-            setCurrentIndex(changeIndex(currentIndex, increase))
-            setPrevIndex(changeIndex(prevIndex, increase))
-            setNextIndex(changeIndex(nextIndex, increase))
+            setCurrentIndex(changeIndex(currentIndex, toGoNext))
+            setPrevIndex(changeIndex(prevIndex, toGoNext))
+            setNextIndex(changeIndex(nextIndex, toGoNext))
             setTimeout(() => {
+                setGoNext(false)
+                setGoPrev(false)
                 setAllowed(true);
             }, 1000)
         }
@@ -77,7 +80,7 @@ const Slides=(props)=>{
 
     return(<>{
         // props.children.map((element,index)=>React.cloneElement(element,{ref:getRef(index,currentIndex,prevIndex,nextIndex)}))
-        props.children.map((element,index)=>React.cloneElement(element,{key:index,index:index,className:`each-slide ${goPrev&&index==prevIndex?'no-transition':''} ${goNext&&index==nextIndex?'no-transition':''}`,style:{left:`${currentIndex==index?"0":nextIndex==index?"100%":prevIndex==index?"-100%":"200%"}`}}))
+        props.children.map((element,index)=>React.cloneElement(element,{key:index,index:index,className:`each-slide ${goPrev&index==prevIndex?'no-transition':''} ${goNext&&index==nextIndex?'no-transition':''}`,style:{left:`${currentIndex==index?"0":nextIndex==index?"100%":prevIndex==index?"-100%":""}`,opacity:`${currentIndex==index?"1":nextIndex==index?"1":prevIndex==index?"1":"0"}`}}))
 
     }
         <button className={"slideshow-prev-btn"} onClick={()=>changeSlide(true)}><i className="fa fa-angle-right" ></i></button>

@@ -20,38 +20,49 @@ const Home = (props) => {
 
     useEffect(()=>{
 
-        if(sidebarWidth!=0&&projectbarWidth!=0){
-        window.addEventListener("scroll",e=>{
-            // if(window.scrollY>sidebar.po
-            console.log(projectsbar.current.getBoundingClientRect().bottom,window.innerHeight)
-            console.log(window.scrollY)
-            if(projectsbar.current.getBoundingClientRect().bottom<=window.innerHeight){
-                if(sidebar.current.style.position!="absolute")
-                    sidebar.current.style.top=window.scrollY-window.innerHeight+"px"
-                sidebar.current.style.position="absolute"
+        const handleScroll=
+            e=>{
+                // if(window.scrollY>sidebar.po
+                console.log(projectsbar.current.getBoundingClientRect().top,projectsbar.current.getBoundingClientRect().bottom,window.innerHeight)
+                console.log(window.scrollY)
+                if(projectsbar.current.getBoundingClientRect().bottom<=window.innerHeight){
+                    if(sidebar.current.style.position!="absolute")
+                        sidebar.current.style.top=window.scrollY-2*window.innerHeight+projectsbar.current.getBoundingClientRect().bottom+"px"
+                    sidebar.current.style.position="absolute"
+                    sidebar.current.style.width=sidebarWidth+"px"
+                    projectsbar.current.style.width=projectbarWidth+"px"
+
+
+                }
+                else if(projectsbar.current.getBoundingClientRect().top<=0){
+                    // sidebar.current.
+                    setToFixSidebar(true)
+                    sidebar.current.style.top="0px"
+                    sidebar.current.style.position="fixed"
+
+                    sidebar.current.style.width=sidebarWidth+"px"
+                    projectsbar.current.style.width=projectbarWidth+"px"
+
+                }else{
+                    sidebar.current.style.position="relative"
+                    sidebar.current.style.display="block"
+                    sidebar.current.style.flex="1"
+
+                    setToFixSidebar(false)
+                }
+
 
             }
-            else if(projectsbar.current.getBoundingClientRect().top<=0){
-                // sidebar.current.
-                setToFixSidebar(true)
-                sidebar.current.style.top="0px"
-                sidebar.current.style.position="fixed"
 
-                sidebar.current.style.width=sidebarWidth+"px"
-                projectsbar.current.style.width=projectbarWidth+"px"
-
-            }else{
-                sidebar.current.style.position="relative"
-                sidebar.current.style.display="block"
-                sidebar.current.style.flex="1"
-
-                setToFixSidebar(false)
+        if(sidebarWidth!=0&&projectbarWidth!=0&&projectsbar.current!=null&&sidebar.current!=null){
+        window.addEventListener("scroll",handleScroll)
             }
 
+        return()=> {
+            window.removeEventListener("scroll",handleScroll)
 
-        })
-            }
-    },[sidebarWidth,projectbarWidth])
+        }
+        },[sidebarWidth,projectbarWidth])
     useEffect(()=>{
         setSidebarWidth(sidebar.current.getBoundingClientRect().width)
         setProjectbarWidth(projectsbar.current.getBoundingClientRect().width)
@@ -68,9 +79,9 @@ const Home = (props) => {
 
 
         <div className="home-start container" >
-            <img id="laptop-img" src="imgs/laptop_clipart.png"></img>
-            <img id="coffee-img" src="imgs/coffee_clipart.png"></img>
-            <img id="headphone-img" src="imgs/headphones_clipart.png"></img>
+            <img id="laptop-img" src={process.env.PUBLIC_URL+"/imgs/laptop_clipart.png"}></img>
+            <img id="coffee-img" src={process.env.PUBLIC_URL+"/imgs/coffee_clipart.png"}></img>
+            <img id="headphone-img" src={process.env.PUBLIC_URL+"/imgs/headphones_clipart.png"}></img>
             <div className="typewriter">
                 {/*<h1>Abigail Aunjoli Lindiwe Babtjie Tshijuka Kayembe</h1>*/}
                 <h1>Representing ...</h1>

@@ -14,8 +14,10 @@
 
   },
   {
-    "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
-      {"type":"img","url":"projects/lyfly/lyfly_02.png"},
+    "res": [{"type":"img","url":"projects/xperiment_3d/3d_01.png"},
+      {"type":"img","url":"projects/xperiment_3d/3d_02.jpeg"},
+      {"type":"img","url":"projects/xperiment_3d/3d_03.jpeg"},
+
       {"type":"video","url":"dA2v9AxLpgs"}],
     "title": "Xperiment.3D Web App",
     "sidebarName": "Xperiment-3D",
@@ -25,12 +27,15 @@
 
   },
   {
-    "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
-      {"type":"img","url":"projects/lyfly/lyfly_02.png"}],
-    "title": "2d Platformer",
-    "sidebarName": "Game",
+    "res": [{"type":"img","url":"projects/petcare/petcare_01.png"},
+      {"type":"img","url":"projects/petcare/petcare_02.png"},
+      {"type":"img","url":"projects/petcare/petcare_03.png"},
+      {"type":"img","url":"projects/petcare/petcare_04.png"},
+      {"type":"img","url":"projects/petcare/petcare_05.png"}],
+    "title": "Pet Care Flask App",
+    "sidebarName": "PetCare",
     "backgroundColor": "#FFFFFF",
-    "stack": ["C#","Unity2D","SQLite"],
+    "stack": ["Flask","Python","SQLite","SCSS/CSS","JS","HTML"],
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
 
   }],
@@ -56,8 +61,12 @@
 
     },
     {
-      "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
-        {"type":"img","url":"projects/lyfly/lyfly_02.png"}],
+      "res": [{"type":"img","url":"projects/petcare/petcare_01.png"},
+        {"type":"img","url":"projects/petcare/petcare_02.png"},
+        {"type":"img","url":"projects/petcare/petcare_03.png"},
+        {"type":"img","url":"projects/petcare/petcare_04.png"},
+        {"type":"img","url":"projects/petcare/petcare_05.png"}
+      ],
       "title": "2d Platformer",
       "sidebarName": "Game",
       "backgroundColor": "#FFFFFF",
