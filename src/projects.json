@@ -1,8 +1,9 @@
 
 { "largeprojects":[
   {
-    "res": [{"type":"img","url":"projects/lyfly/lyfly_01.png"},
+    "res": [
       {"type":"img","url":"projects/lyfly/lyfly_02.png"},
+      {"type":"img","url":"projects/lyfly/lyfly_01.png"},
       {"type":"img","url":"projects/lyfly/lyfly_03.png"},
       {"type":"img","url":"projects/lyfly/lyfly_04.png"}],
 
@@ -24,8 +25,7 @@
     "sidebarName": "Xperiment-3D",
     "backgroundColor": "#FFFFFF",
     "stack": ["PHP","Three.js","Js","SCSS/CSS","HTML"],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
-
+    "description": "Xperiment.3D offers 3D models and experiment simulations of major concepts that requires students to imagine objects in 3D space. I worked on the project in Hack the North 2020++ along with three other members. I was responsible for the script for rendering models using three.js and also created the backend using PHP. In the app, users can orbit, zoom in-and-out, move the 3d  model, as well as see the model in different variations. By providing  appropriate theories and explanations along with the descriptive 3D structures and animations, our aim is to ensure that students gain detailed knowledge."
   },
   {
     "res": [{"type":"img","url":"projects/petcare/petcare_01.png"},
@@ -36,8 +36,9 @@
     "title": "Pet Care Flask App",
     "sidebarName": "PetCare",
     "backgroundColor": "#FFFFFF",
-    "stack": ["Flask","Python","SQLite","SCSS/CSS","JS","HTML"],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
+    "stack": ["Flask","Python","SQLite","SASS/CSS","JS","HTML"],
+    "description": "Group project where we created a pet day care app. The app allows customers to create a profile on the website and book daycare visits for their pets in one of the registered stores. I worked on the backend (flask) and database(SQLite)"
+
 
   }],
   "smallprojects":[
@@ -46,9 +47,8 @@
       "title": "Carding Project",
       "sidebarName": "Carding",
       "backgroundColor": "#FFFFFF",
-      "stack": ["Node.JS","React.JS","MongoDB","Python","Tensorflow","HHAHA"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
-
+      "stack": ["Node.JS","React.JS","MongoDB","Python","Tensorflow"],
+      "description": "Developing an interface to process and extract data from the police street check reports and match the extracted data's results with a machine learning model made with survey based data also to be collected using the interface\n"
     },
     {
       "res": [{"type":"img","url":"projects/paintfx/paintfx_01.png"},
@@ -58,8 +58,7 @@
       "sidebarName": "Game",
       "backgroundColor": "#FFFFFF",
       "stack": ["JavaFX"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
-
+      "description": "A drawing app written in JavaFx that allows user to draw various shapes with different colors on the canvas which can also be dragged and resized. The user can also pan the canvas viewport. "
     },
     {
       "res": [
@@ -71,8 +70,7 @@
       "sidebarName": "portfolio",
       "backgroundColor": "#FFFFFF",
       "stack": ["ReactJS"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
-
+      "description": "Portfolio website"
     },
     {
       "res": [{"type":"img","url":"projects/bouncy/bouncy_01.webp"},
@@ -83,8 +81,7 @@
       "sidebarName": "Game",
       "backgroundColor": "#FFFFFF",
       "stack": ["Java","Android SDK"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit bibend Vestibulum massa metus, hendrerit biLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit. Vestibulum massa metbend"
-
+      "description": "A 2d android game in which I created my own renderer in core java using concepts of multithreading. This was one of my first projects that I completed at the age of 14."
     }
 
   ]
