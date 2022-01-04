@@ -11,7 +11,7 @@ const LargeProject = (props) => (
 
         <div className="media-container row-flex-center">
             <Slideshow res={props.res} className="slideshow-large-project"/>
-            <LinkBar/>
+            <LinkBar links={props.links}/>
         </div>
         {/*Anchor point to display sidebar name */}
         <div className={props.sidebarName}/>

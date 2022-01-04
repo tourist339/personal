@@ -106,6 +106,7 @@ const Home = (props) => {
 
                         {projects.largeprojects.map(p=>{
                             return <LargeProject
+                                          links={p.links}
                                           key={p.title}
                                           title={p.title}
                                           res={p.res}
@@ -113,6 +114,8 @@ const Home = (props) => {
                                           description={p.description}
                                           sidebarName={p.sidebarName}
                                           backgroundColor={[p.backgroundColor]}
+
+
                             />
                         })}
 
@@ -133,6 +136,7 @@ const Home = (props) => {
                         description={p.description}
                         sidebarName={p.sidebarName}
                         backgroundColor={[p.backgroundColor]}
+                        links={p.links}
                     />
                 })}
             </div>

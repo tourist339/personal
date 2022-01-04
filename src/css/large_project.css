@@ -54,14 +54,15 @@
   margin-bottom: 20px;
 }
 .large-project .linkbar {
-  padding: 10px 5px;
+  padding: 5px 5px;
 }
 .large-project .linkbar > a {
-  font-size: 1.6em;
-  background-color: dimgray;
-  border: 1px black solid;
+  font-size: 1.4em;
+  background-color: white;
+  border: 2px black solid;
   border-radius: 50%;
   padding: 4px;
+  margin-bottom: 10px;
 }
 .large-project .linkbar > a:hover {
   cursor: pointer;

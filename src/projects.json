@@ -1,5 +1,6 @@
 
-{ "largeprojects":[
+{
+  "largeprojects":[
   {
     "res": [
       {"type":"img","url":"projects/lyfly/lyfly_02.png"},
@@ -11,8 +12,10 @@
     "sidebarName": "Lyfly",
     "backgroundColor": "white",
     "stack": ["PHP","APACHE","MYSQL","JS","SCSS/CSS","HTML"],
-    "description": "The app will allow people to list their properties for rentals and they'll also be given the option to have their properties personally managed by the firm. Also, people looking for rentals will be able to easily search for a suitable place in their city."
-
+    "description": "The app will allow people to list their properties for rentals and they'll also be given the option to have their properties personally managed by the firm. Also, people looking for rentals will be able to easily search for a suitable place in their city.",
+     "links": {
+       "github": "https://github.com/tourist339/nik"
+     }
 
   },
   {
@@ -25,7 +28,12 @@
     "sidebarName": "Xperiment-3D",
     "backgroundColor": "#FFFFFF",
     "stack": ["PHP","Three.js","Js","SCSS/CSS","HTML"],
-    "description": "Xperiment.3D offers 3D models and experiment simulations of major concepts that requires students to imagine objects in 3D space. I worked on the project in Hack the North 2020++ along with three other members. I was responsible for the script for rendering models using three.js and also created the backend using PHP. In the app, users can orbit, zoom in-and-out, move the 3d  model, as well as see the model in different variations. By providing  appropriate theories and explanations along with the descriptive 3D structures and animations, our aim is to ensure that students gain detailed knowledge."
+    "description": "Xperiment.3D offers 3D models and experiment simulations of major concepts that requires students to imagine objects in 3D space. I worked on the project in Hack the North 2020++ along with three other members. I was responsible for the script for rendering models using three.js and also created the backend using PHP. In the app, users can orbit, zoom in-and-out, move the 3d  model, as well as see the model in different variations. By providing  appropriate theories and explanations along with the descriptive 3D structures and animations, our aim is to ensure that students gain detailed knowledge.",
+    "links": {
+      "github": "https://github.com/tourist339/Xperiment.3d",
+      "info": "https://devpost.com/software/xperiment-3d"
+    }
+
   },
   {
     "res": [{"type":"img","url":"projects/petcare/petcare_01.png"},
@@ -37,9 +45,10 @@
     "sidebarName": "PetCare",
     "backgroundColor": "#FFFFFF",
     "stack": ["Flask","Python","SQLite","SASS/CSS","JS","HTML"],
-    "description": "Group project where we created a pet day care app. The app allows customers to create a profile on the website and book daycare visits for their pets in one of the registered stores. I worked on the backend (flask) and database(SQLite)"
-
-
+    "description": "Group project where we created a pet day care app. The app allows customers to create a profile on the website and book daycare visits for their pets in one of the registered stores. I worked on the backend (flask) and database(SQLite)",
+    "links": {
+      "github": "https://git.cs.usask.ca/kak110/alphatech"
+    }
   }],
   "smallprojects":[
     {
@@ -48,7 +57,10 @@
       "sidebarName": "Carding",
       "backgroundColor": "#FFFFFF",
       "stack": ["Node.JS","React.JS","MongoDB","Python","Tensorflow"],
-      "description": "Developing an interface to process and extract data from the police street check reports and match the extracted data's results with a machine learning model made with survey based data also to be collected using the interface\n"
+      "description": "Developing an interface to process and extract data from the police street check reports and match the extracted data's results with a machine learning model made with survey based data also to be collected using the interface\n",
+      "links": {
+        "info": "https://news.usask.ca/articles/research/2021/usask-researcher-investigates-the-value-of-police-street-checks.php"
+      }
     },
     {
       "res": [{"type":"img","url":"projects/paintfx/paintfx_01.png"},
@@ -58,7 +70,10 @@
       "sidebarName": "Game",
       "backgroundColor": "#FFFFFF",
       "stack": ["JavaFX"],
-      "description": "A drawing app written in JavaFx that allows user to draw various shapes with different colors on the canvas which can also be dragged and resized. The user can also pan the canvas viewport. "
+      "description": "A drawing app written in JavaFx that allows user to draw various shapes with different colors on the canvas which can also be dragged and resized. The user can also pan the canvas viewport. ",
+      "links": {
+        "github": "https://github.com/tourist339/paint_fx"
+      }
     },
     {
       "res": [
@@ -70,7 +85,10 @@
       "sidebarName": "portfolio",
       "backgroundColor": "#FFFFFF",
       "stack": ["ReactJS"],
-      "description": "Portfolio website"
+      "description": "Portfolio website",
+      "links": {
+        "github": "https://github.com/tourist339/personal"
+      }
     },
     {
       "res": [{"type":"img","url":"projects/bouncy/bouncy_01.webp"},
@@ -81,9 +99,11 @@
       "sidebarName": "Game",
       "backgroundColor": "#FFFFFF",
       "stack": ["Java","Android SDK"],
-      "description": "A 2d android game in which I created my own renderer in core java using concepts of multithreading. This was one of my first projects that I completed at the age of 14."
+      "description": "A 2d android game in which I created my own renderer in core java using concepts of multithreading. This was one of my first projects that I completed at the age of 14.",
+      "links": {
+        "info": "https://play.google.com/store/apps/details?id=com.NK.nestle"
+      }
     }
-
   ]
 }
 

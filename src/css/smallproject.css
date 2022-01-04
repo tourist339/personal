@@ -66,9 +66,18 @@
   font-size: x-large;
   border-radius: 0.5em;
 }
+.small-project .sp-links a, .small-project .sp-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 2px;
+}
 .small-project .sp-links:hover, .small-project .sp-menu:hover {
   cursor: pointer;
   background-color: black;
+}
+
+.sp-links {
+  padding: 0px;
 }
 
 .sp-title {

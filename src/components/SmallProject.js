@@ -14,7 +14,7 @@ const SmallProject=(props)=>{
             </Slideshow>
 
             <button className={"sp-menu"} onClick={()=>setDisplayDesc(!displayDesc)}><i className={"fa fa-bars"}></i></button>
-            <button className={"sp-links"}><i className={"fa fa-link"}></i></button>
+            <button className={"sp-links"}><a  target={"_blank"} href={props.links[Object.keys(props.links)[0]]}><i className={"fa fa-link"}></i></a></button>
             <div className="sp-title">{props.title}</div>
             <div className="sp-stack">
                 <span className="stack-head">Stack</span><span> : </span>

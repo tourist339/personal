@@ -13,6 +13,12 @@ $radius:0.5em;
     height: 300px;
   }
   .sp-links,.sp-menu{
+    a{
+      color: white;
+      text-decoration: none;
+      padding: 6px 2px;
+
+    }
     position: absolute;
     top: 4px;
     background-color: rgba(0,0,0,0.7);
@@ -27,6 +33,9 @@ $radius:0.5em;
     }
 
   }
+}
+.sp-links{
+  padding:0px;
 }
 
 .sp-title{
